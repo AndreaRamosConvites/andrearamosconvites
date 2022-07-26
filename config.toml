@@ -2,7 +2,7 @@ baseURL = "andrearamosconvites.netlify.app"
 languageCode = "en"
 defaultContentLanguage = "pt-br"
 title = "Andréa Ramos Convites"
-theme = "KeepItARC"
+theme = "KeepIt"
 unsafe = true
 hardWraps = true
 
