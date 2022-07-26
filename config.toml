@@ -3,8 +3,6 @@ languageCode = "en"
 defaultContentLanguage = "pt-br"
 title = "Andréa Ramos Convites"
 theme = "KeepIt"
-unsafe = true
-hardWraps = true
 
 paginate = 12
 enableEmoji = true
