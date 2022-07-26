@@ -1,10 +1,15 @@
 ---
+author:
+  name: "Michael Henderson"
 date: 2014-09-28
 linktitle: Creating a New Theme
 type:
 - post 
 - posts
 title: Creating a New Theme
+weight: 10
+series:
+- Hugo 101
 ---
 
 
@@ -1132,7 +1137,7 @@ $ vi themes/zafta/layouts/post/single.html
 
   <h1>{{ .Title }}</h1>
   <h2>{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
-  {{ .Content }}  
+  {{ .Content }}
 
 {{ partial "footer.html" . }}
 :wq
