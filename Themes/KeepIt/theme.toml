@@ -24,7 +24,7 @@ features = [
   "syntax-highlighting",
   "SEO Optimized"
 ]
-min_version = "0.53"
+min_version = "0.100.1"
 
 [author]
   name = "Fastbyte01"
