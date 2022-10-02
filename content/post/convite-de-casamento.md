@@ -1,10 +1,10 @@
 ---
-title: Convite de Casamento
+title: Convite
 description: Ref. 1725 - Detalhes em Prata
-categories: Casamento
+categories: Clássicos
 image: /images/699-ref.-1725-lacre-prata.jpg
 ---
-E﻿nvelope Bico Central (formato "V")\
+M﻿odelo de E﻿nvelope em Bico Central (formato "V")\
 \
 -﻿ Papel Envelope: Opalina Evenglow Diamond 240gr\
 -﻿ Papel Convite: Opalina Evenglow Diamond 240gr\
