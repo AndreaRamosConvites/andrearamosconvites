@@ -1,26 +1,18 @@
 backend:
   name: git-gateway
-  branch: main
-publish_mode: editorial_workflow
+  branch: main 
 media_folder: static/images/
 public_folder: /images/
+locale: 'pt'
 collections:
-  - name: Posts
-    label: Posts
-    folder: content/posts
+  - label: "Catálogo"
+    name: "post"
+    folder: "content/post"
     create: true
-    slug: "{{slug}}"
     fields:
-      - label: Título
-        name: title
-        required: true
-        widget: string
-        hint: ""
-        default: ""
-      - label: Body
-        name: body
-        required: true
-        widget: markdown
-        hint: ""
-        default: ""
-    identifier_field: Posts
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Referência", name: "description", widget: "string"}
+      - {label: "Categoria", name: "categories", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}         
+      - {label: "Fotos", name: "body", widget: "markdown"}
+      
