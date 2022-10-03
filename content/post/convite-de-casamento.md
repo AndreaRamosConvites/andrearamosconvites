@@ -15,3 +15,5 @@ M﻿odelo de E﻿nvelope em Bico Central (formato "V")\
 \
 O﻿bs: É possivel a mudança de papel, cor do relevo, cor da impressão, cor do lacre sem alteração de valor.\
 O﻿bs. 2: Arte personalizada, montada junto com o cliente (sem cobrança extra).
+
+![](/images/699-ref.-1725-lacre-prata.jpg)
