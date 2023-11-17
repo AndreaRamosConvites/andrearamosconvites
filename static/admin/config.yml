@@ -14,5 +14,5 @@ collections:
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "redirect", required: true }  
       - { name: "title", label: "Nome", widget: "string", required: true }
-      - { name: "slug", label: "Slug", widget: "string", required: true }
+      - { name: "slug", label: "slug (andrearamos.com.br/slug)", widget: "string", required: true }
       - { name: "redirect_url", label: "Link do Google Drive", widget: "string", default: "#", required: true }
