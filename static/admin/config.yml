@@ -1,18 +1,18 @@
 backend:
   name: git-gateway
-  branch: main 
+  branch: main
 media_folder: static/images/
 public_folder: /images/
 locale: 'pt'
 collections:
-  - label: "Catálogo"
-    name: "post"
-    folder: "content/post"
+  - name: "posts"
+    identifier_field: "title"
+    label: "Blog"
+    label_singular: "post"
+    folder: "content/posts"
     create: true
     fields:
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Referência", name: "description", widget: "string"}
-      - {label: "Categoria", name: "categories", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}         
-      - {label: "Fotos", name: "body", widget: "markdown"}
-      
+      - { name: "layout", label: "Layout", widget: "hidden", default: "redirect", required: true }  
+      - { name: "title", label: "Nome", widget: "string", required: true }
+      - { name: "slug", label: "Slug", widget: "string", required: true }
+      - { name: "redirect_url", label: "Link do Google Drive", widget: "string", default: "#", required: true }

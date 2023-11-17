@@ -1,0 +1,63 @@
+# Basic
+title = "Andrea Ramos Convites"
+baseURL = "https://andrearamosconvites.com.br/"
+theme = "vno-hugo"
+
+# supported languages: en-us
+defaultContentLanguage = 'en-us'
+# here lists available languages, if you wish to add your own custom translation, please refer to https://gohugo.io/content-management/multilingual
+[languages]
+  [languages.en-us]
+    languageName = 'English(United States)'
+    weight = 10
+  [languages.zh-cn]
+    languageName = '简体中文（中国大陆）'
+    weight = 20
+
+# Pagination
+paginate = 10
+paginatePath = "page"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[menu]
+  [[menu.main]]
+    name = "Instagram"
+    identifier = "Instagram"
+    url = "https://www.instagram.com/andrearamosconvites"
+    weight = 10
+ [[menu.main]]
+    name = "Whatsapp"
+    identifier = "Whatsapp"
+    url = "https://wa.me/3173428284"
+    weight = 20
+[taxonomies]
+    tag = "tags"
+    
+[params]
+author = "Andre Ramos Convites"
+subtitle = "Convites únicos, momentos inesquecíveis. "
+description = "Convites de casamento, 15 anos e outras ocasiões especiais."
+welcomeMessage = "Fale Conosco"
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+coverColor = "pink"
+
+# Take a look on https://github.com/gitalk/gitalk#usage for more info.
+[params.comment.gitalk]
+ID = ""
+secret = ""
+repo = ""
+owner = ""
+
+[params.ga]
+ID = "your_ga_id"
+host = "your_host"
+
+[params.copyright]
+license = 'CC BY-NC-SA 4.0'
+license_link = 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
+
+[permalinks]
+posts = "/:slug/"

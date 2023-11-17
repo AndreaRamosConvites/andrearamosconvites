@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- favicon -->
+    {{ partial "favicon.html" . }}
+
+    <!-- Style -->
+    {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{$styles.Data.Integrity}}" crossorigin="anonymous" media="screen">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- HTML Meta Tags -->
+  <title>Andrea Ramos Convites</title>
+  <meta name="description" content="Transformando momentos especiais em obras de arte: convites artesanais personalizados com o toque único.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sapienstj.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Andrea Ramos Convites">
+  <meta property="og:description" content="Transformando momentos especiais em obras de arte: convites artesanais personalizados com o toque único.">
+  <meta property="og:image" content="https://andrearamosconvites.netlify.app/images/opengraph.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sapienstj.com.br">
+  <meta property="twitter:url" content="https://sapienstj.com.br/">
+  <meta name="twitter:title" content="Andrea Ramos Convites">
+  <meta name="twitter:description" content="Transformando momentos especiais em obras de arte: convites artesanais personalizados com o toque único.">
+  <meta name="twitter:image" content="https://andrearamosconvites.netlify.app/images/opengraph.jpg">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+</head>
