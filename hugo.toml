@@ -14,9 +14,10 @@ defaultContentLanguage = 'en-us'
     languageName = '简体中文（中国大陆）'
     weight = 20
 
-# Pagination
-paginate = 10
-paginatePath = "page"
+[pagination]
+  [pagination.atalhos]
+    perPage = 5
+    paginatePath = "page"
 
 [outputs]
   home = ["HTML", "RSS"]
@@ -61,3 +62,4 @@ license_link = 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
 
 [permalinks]
 posts = "/:slug/"
+atalhos = "/:slug/"
