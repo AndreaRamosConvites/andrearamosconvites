@@ -62,3 +62,6 @@ license_link = 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
 
 [permalinks]
 atalhos = "/:slug/"
+
+[aliases]
+  "/tags/atalhos/" = "/links/"

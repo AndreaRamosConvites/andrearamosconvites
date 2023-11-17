@@ -1,14 +1,43 @@
 {{ define "main" }}
+<script>
+    function copyLinkAndChangeText(linkElement) {
+        // Obter o baseURL do config.toml
+        var baseURL = "{{ .Site.BaseURL | absURL }}";
+
+        // Remover a barra no final do baseURL, se existir
+        baseURL = baseURL.replace(/\/$/, "");
+
+        // Obter o link específico do botão
+        var buttonLink = linkElement.getAttribute("data-link");
+
+        // Construir a URL completa
+        var completeLink = baseURL + buttonLink;
+
+        // Copiar a URL para a área de transferência
+        navigator.clipboard.writeText(completeLink);
+
+        // Mudar o texto do link para "Link copiado" por alguns instantes
+        linkElement.innerHTML = "Link copiado";
+        setTimeout(function () {
+            linkElement.innerHTML = linkElement.getAttribute("data-original-text");
+        }, 2000); // Mude o valor de 2000 para ajustar a duração que o texto "Link copiado" será exibido
+    }
+</script>
+
 <div class="main-post-list hidden">
     <ol class="post-list">
         {{ range .Paginator.Pages }}
         <li>
-            <h2 class="post-list__post-title post-title"><a href="{{ .RelPermalink }}" title="To {{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <p class="excerpt">{{ .Summary | truncate 250 }}&hellip;</p>
-            <div class="post-list__meta">
-                <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700 " }}" class="post-list__meta--date date">{{ .Date.Format "2006-01-02" }}</time>
-                {{ with .Params.tags }} <span class="post-list__meta--tags tags"> {{ range . }}  • <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a> {{ end }} </span> {{ end }}
-                <a class="btn-border-small" href={{ .RelPermalink }}>{{ T "continue" }}</a></div>
+            <h2 class="post-list__post-title post-title">
+                <span onmouseover="this.style.color='white'" onmouseout="this.style.color=''">
+                    <a href="javascript:void(0);" 
+                       data-link="{{ .RelPermalink }}"
+                       data-original-text="{{ .Title }}"
+                       onclick="copyLinkAndChangeText(this)">
+                       {{ .Title }}
+                    </a>
+                </span>
+            </h2>
             <hr class="post-list__divider" />
         </li>
         {{ end }}
