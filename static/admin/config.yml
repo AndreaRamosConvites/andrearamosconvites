@@ -8,7 +8,7 @@ collections:
   - name: "atalhos"
     identifier_field: "title"
     label: "Atalhos"
-    label_singular: "Atalhos"
+    label_singular: "Atalho"
     folder: "content/atalhos"
     create: true
     fields:
