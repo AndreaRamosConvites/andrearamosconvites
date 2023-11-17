@@ -62,4 +62,3 @@ license_link = 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
 
 [permalinks]
 posts = "/:slug/"
-atalhos = "/:slug/"
