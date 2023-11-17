@@ -5,11 +5,11 @@ media_folder: static/images/
 public_folder: /images/
 locale: 'pt'
 collections:
-  - name: "posts"
+  - name: "atalhos"
     identifier_field: "title"
-    label: "Páginas"
-    label_singular: "Página"
-    folder: "content/posts"
+    label: "Atalhos"
+    label_singular: "Atalhos"
+    folder: "content/atalhos"
     create: true
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "redirect", required: true }  
