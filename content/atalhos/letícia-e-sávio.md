@@ -2,7 +2,7 @@
 layout: redirect
 tags:
   - Atalhos
-title: Letícia e Sávio
-slug: leticiaesavio
-redirect_url: https://drive.google.com/drive/u/1/folders/1TyUzN9UmRn6XTc6kwTThT045eAjWwduL
+title: Eduarda e Natanael
+slug: eduardaenatanael
+redirect_url: https://drive.google.com/drive/folders/1MiWLoRRR8obMrMbYtYrRDodX3GqU0v6F?usp=drive_link
 ---
