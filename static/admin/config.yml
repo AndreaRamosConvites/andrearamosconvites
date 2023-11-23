@@ -6,6 +6,8 @@ public_folder: /images/
 locale: 'pt'
 collections:
   - name: "atalhos"
+    editor:
+      preview: false
     identifier_field: "title"
     label: "Atalhos"
     label_singular: "Atalho"
@@ -13,7 +15,7 @@ collections:
     create: true
     fields:
       - { name: "layout", label: "Layout", widget: "hidden", default: "redirect", required: true }  
-      - { name: "tags", label: "tag", widget: "hidden", default: "Atalhos", required: true }        
+      - { name: "tags", label: "tag", widget: "hidden", default: ["Atalhos"], required: true }               
       - { name: "title", label: "Nome", widget: "string", required: true }
       - { name: "slug", label: "Slug (andrearamos.com.br/slug)", widget: "string", required: true }
       - { name: "redirect_url", label: "Link do Google Drive", widget: "string", default: "#", required: true }
