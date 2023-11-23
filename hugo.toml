@@ -1,6 +1,6 @@
 # Basic
 title = "Andrea Ramos Convites"
-baseURL = "https://andrearamosconvites.netlify.app/"
+baseURL = "https://andrearamosconvites.com.br/"
 theme = "vno-hugo"
 
 # supported languages: en-us
