@@ -2,7 +2,7 @@
 layout: redirect
 tags:
   - Atalhos
-title: Caroline e Maik
-slug: carolineemaik
-redirect_url: https://drive.google.com/drive/folders/1zJzpDOBeyLgAAFPkINB0CFG0kxo5a-HO?usp=drive_link
+title: Giulia Scofano 15A
+slug: giuliascofano15A
+redirect_url: https://drive.google.com/drive/folders/1YaXfGJB8rxkB909EpNAQZkjFpq9Pvc01?usp=drive_link
 ---
