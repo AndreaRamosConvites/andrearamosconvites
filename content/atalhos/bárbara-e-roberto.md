@@ -2,7 +2,7 @@
 layout: redirect
 tags:
   - Atalhos
-title: Giovanna Monteiro 15A
-slug: giovannamonteiro15A
-redirect_url: https://drive.google.com/drive/folders/1K2qbzzcdTjr9OeQehR9R-5-_zCEz7VqG?usp=drive_link
+title: Ana Júlia Senobio 15A
+slug: anajuliasenobio15A
+redirect_url: https://drive.google.com/drive/folders/1cARiiK-mFof1rc4Nra-anU6pNlnDn7RL?usp=drive_link
 ---
